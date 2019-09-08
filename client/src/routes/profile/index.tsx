@@ -1,5 +1,4 @@
 import { Component, h } from "preact";
-import * as style from "./style.css";
 
 interface Props {
     user: string;
@@ -38,7 +37,7 @@ export default class Profile extends Component<Props, State> {
     };
     public render({ user }: Props, { time, count }: State) {
         return (
-            <div class={style.profile}>
+            <div class="Profile">
                 <h1>Profile: {user}</h1>
                 <p>This is the user profile for a user named {user}.</p>
 

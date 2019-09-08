@@ -1,0 +1,11 @@
+html {
+  color: $text;
+  // @TODO
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  // Better Font Rendering
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
