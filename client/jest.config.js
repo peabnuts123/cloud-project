@@ -28,6 +28,7 @@ module.exports = {
     "^react$": "preact-compat",
     "^react-dom$": "preact-compat",
     "^create-react-class$": "preact-compat/lib/create-react-class",
+    "^@app/(.*)$": "<rootDir>/src/$1",
     "^react-addons-css-transition-group$": "preact-css-transition-group"
   }
 }
