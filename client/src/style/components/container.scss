@@ -1,0 +1,21 @@
+// Variables
+$container-padding--small: 10px;
+$container-padding--large: 20px;
+
+.Container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding--small;
+  padding-right: $container-padding--small;
+
+  @include media-query('tablet') {
+    padding-left: $container-padding--large;
+    padding-right: $container-padding--large;
+  }
+
+  @include media-query('tablet') { width: $breakpoint-mobile; }
+  @include media-query('laptop') { width: $breakpoint-tablet; }
+  @include media-query('desktop') { width: $breakpoint-laptop; }
+  @include media-query('widescreen') { width: $breakpoint-desktop; }
+}
