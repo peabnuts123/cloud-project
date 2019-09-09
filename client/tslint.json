@@ -3,17 +3,20 @@
         "tslint:recommended",
         "tslint-react",
         "tslint-eslint-rules",
-        "tslint-consistent-codestyle",
-        "tslint-config-prettier"
+        "tslint-consistent-codestyle"
     ],
     "jsRules": {
       "ordered-imports": false,
       "interface-name": false,
-      "object-literal-sort-keys": false
+      "object-literal-sort-keys": false,
+      "max-line-length": false,
+      "quotemark": false
     },
     "rules": {
       "ordered-imports": false,
       "interface-name": false,
-      "object-literal-sort-keys": false
+      "object-literal-sort-keys": false,
+      "max-line-length": false,
+      "quotemark": false
     }
 }
