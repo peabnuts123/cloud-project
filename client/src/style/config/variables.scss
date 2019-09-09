@@ -1,6 +1,7 @@
 // Colors
 $purple: #2D173D;
 $pink: #FF98B7;
+$blue: #5FB2FF;
 
 // Greys
 $black: #000000;
@@ -13,3 +14,12 @@ $white:      #FFFFFF;
 $text: rgba($black, 0.9);
 $primary: $purple;
 $secondary: $pink;
+$link: $blue;
+$selection: $pink;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-laptop: 1280px;
+$breakpoint-desktop: 1600px;
+

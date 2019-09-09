@@ -1,7 +1,74 @@
+// Text selection
+// NOTE: must be specified individually
+::selection { background: $selection; }
+::-moz-selection { background: $selection; }
+
+// Fonts
+%font-heading {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+%font-body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+
+
+// Headings
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  @extend %font-heading;
+  margin-top: 0;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+h1, .h1 {
+  font-size: 32px;
+}
+
+h2, .h2 {
+  font-size: 24px;
+}
+
+h3, .h3 {
+  font-size: 20px;
+}
+
+h4, .h4 {
+  font-size: 16px;
+}
+
+p, .p {
+  font-size: 16px;
+}
+
+strong, .strong {
+  font-weight: bold;
+}
+
+label, .label {
+  @extend %font-heading;
+}
+
+
+// Links
+a, .link {
+  color: $link;
+  text-decoration: underline;
+
+  &:focus, &:hover, &:active {
+    color: darken($link, 15%);
+  }
+}
+
+
+// General / default
 html {
+  @extend %font-body;
   color: $text;
-  // @TODO
-  font-family: 'Helvetica Neue', arial, sans-serif;
+  line-height: 1.5;
+
   // Better Font Rendering
   font-feature-settings: "kern" 1;
   font-kerning: normal;
