@@ -10,13 +10,15 @@
       "interface-name": false,
       "object-literal-sort-keys": false,
       "max-line-length": false,
-      "quotemark": false
+      "quotemark": false,
+      "no-consecutive-blank-lines": false
     },
     "rules": {
       "ordered-imports": false,
       "interface-name": false,
       "object-literal-sort-keys": false,
       "max-line-length": false,
-      "quotemark": false
+      "quotemark": false,
+      "no-consecutive-blank-lines": false
     }
 }

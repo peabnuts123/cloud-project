@@ -1,6 +1,7 @@
 import { Component, h } from "preact";
 
 interface Props { }
+
 export default class Home extends Component<Props> {
   public render() {
     return (

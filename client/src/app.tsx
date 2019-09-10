@@ -21,6 +21,9 @@ export default class App extends Component {
       <div id="app">
         <Header />
         <div class="Container">
+
+        <p>icon: <span class="fas fa-camera" /></p>
+
           <Router onChange={this.handleRoute}>
             <Route path="/" component={Home} />
             <Route path="/profile/" component={Profile} user="me" />
