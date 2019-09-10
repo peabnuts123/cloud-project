@@ -1,6 +1,6 @@
 // Variables
-$container-padding--small: 10px;
-$container-padding--large: 20px;
+$container-padding--small: $m;
+$container-padding--large: 2 * $m;
 
 .Container {
   display: block;
