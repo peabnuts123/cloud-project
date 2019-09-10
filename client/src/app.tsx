@@ -20,12 +20,16 @@ export default class App extends Component {
     return (
       <div id="app">
         <Header />
-        <div class="Container">
-          <Router onChange={this.handleRoute}>
-            <Route path="/" component={Home} />
-            <Route path="/profile/" component={Profile} user="me" />
-            <Route path="/profile/:user" component={Profile} />
-          </Router>
+        <div className="SiteWrapper">
+          <div class="Container">
+
+            <Router onChange={this.handleRoute}>
+              <Route path="/" component={Home} />
+              <Route path="/profile/" component={Profile} user="me" />
+              <Route path="/profile/:user" component={Profile} />
+            </Router>
+
+          </div>
         </div>
       </div>
     );

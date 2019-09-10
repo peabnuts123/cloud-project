@@ -5,8 +5,10 @@ interface Props { }
 export default class Home extends Component<Props> {
   public render() {
     return (
-      <div class="Home">
+      <div class="HomeRoute">
+
         <h2>General</h2>
+
         <div>
           <label for="handle">Handle</label>
           <input id="handle" type="text" style="display: block" />
@@ -24,6 +26,7 @@ export default class Home extends Component<Props> {
         <h4>Home</h4>
         <h4>About</h4>
         <h4>Search</h4>
+
       </div>
     );
   }
