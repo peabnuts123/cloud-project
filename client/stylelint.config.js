@@ -8,7 +8,7 @@ module.exports = {
     "at-rule-empty-line-before": null,
     "block-closing-brace-newline-before": "always-multi-line",
     "block-closing-brace-newline-after": ["always-multi-line", {
-      "ignoreAtRules": ["if", "else"]
+      "ignoreAtRules": ["if", "else"],
     }],
     "block-opening-brace-space-before": "always",
     "block-opening-brace-space-after": "always-single-line",
@@ -23,24 +23,21 @@ module.exports = {
     "function-max-empty-lines": 1,
     "length-zero-no-unit": null,
     "max-empty-lines": [2, {
-      "ignore": ["comments"]
+      "ignore": ["comments"],
     }],
     "no-duplicate-selectors": null,
-    "rule-empty-line-before": ["always-multi-line", {
-      "except": ["after-single-line-comment", "first-nested"],
-      "ignore": ["after-comment", "first-nested"]
-    }],
+    "rule-empty-line-before": null,
     "selector-list-comma-newline-after": "always-multi-line",
     "selector-pseudo-element-colon-notation": "double",
     "value-list-max-empty-lines": 1,
-    
+
 
     /* SCSS rules */
     "scss/at-rule-no-unknown": true,
     "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
     "scss/at-else-if-parentheses-space-before": "always",
     "scss/no-duplicate-dollar-variables": [true, {
-      "ignoreInsideAtRules": ["if", "else", "mixin", "function", "while"]
+      "ignoreInsideAtRules": ["if", "else", "mixin", "function", "while"],
     }],
     "scss/at-function-parentheses-space-before": "never",
     "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
@@ -53,5 +50,5 @@ module.exports = {
     "scss/declaration-nested-properties-no-divided-groups": true,
     "scss/operator-no-unspaced": true,
     "scss/selector-no-redundant-nesting-selector": true,
-  }
+  },
 };
