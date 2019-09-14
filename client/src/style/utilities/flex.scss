@@ -1,0 +1,29 @@
+@mixin flex($namespace: '') {
+  .u-#{$namespace}flex { display: flex !important; }
+
+  // Direction
+  .u-#{$namespace}flexRow { flex-direction: row !important; }
+  .u-#{$namespace}flexRowReverse { flex-direction: row-reverse !important; }
+  .u-#{$namespace}flexColumn { flex-direction: column !important; }
+  .u-#{$namespace}flexColumnReverse { flex-direction: column-reverse !important; }
+
+  // Primary axis alignment
+  .u-#{$namespace}flexJustifyContentStart { justify-content: flex-start !important; }
+  .u-#{$namespace}flexJustifyContentEnd { justify-content: flex-end !important; }
+  .u-#{$namespace}flexJustifyContentCenter { justify-content: center !important; }
+  .u-#{$namespace}flexJustifyContentBetween { justify-content: space-between !important; }
+  .u-#{$namespace}flexJustifyContentAround { justify-content: space-around !important; }
+
+  // Cross acis alignment
+  .u-#{$namespace}flexAlignItemsStart { align-items: flex-start !important; }
+  .u-#{$namespace}flexAlignItemsEnd { align-items: flex-end !important; }
+  .u-#{$namespace}flexAlignItemsCenter { align-items: center !important; }
+  .u-#{$namespace}flexAlignItemsStretch { align-items: stretch !important; }
+  .u-#{$namespace}flexAlignItemsBaseline { align-items: baseline !important; }
+}
+
+@include flex();
+@include media-query('tablet') { @include flex('md-'); }
+@include media-query('laptop') { @include flex('lg-'); }
+@include media-query('desktop') { @include flex('xl-'); }
+@include media-query('widescreen') { @include flex('xx-'); }

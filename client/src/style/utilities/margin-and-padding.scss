@@ -1,0 +1,58 @@
+@mixin margin($namespace: "") {
+  // Margin top
+  .u-#{$namespace}marginTop-0 { margin-top: 0 !important; }
+  .u-#{$namespace}marginTop-sm { margin-top: $m / 2 !important; }
+  .u-#{$namespace}marginTop-md { margin-top: $m !important; }
+  .u-#{$namespace}marginTop-lg { margin-top: $m * 2 !important; }
+  // Margin bottom
+  .u-#{$namespace}marginBottom-0 { margin-bottom: 0 !important; }
+  .u-#{$namespace}marginBottom-sm { margin-bottom: $m / 2 !important; }
+  .u-#{$namespace}marginBottom-md { margin-bottom: $m !important; }
+  .u-#{$namespace}marginBottom-lg { margin-bottom: $m * 2 !important; }
+  // Margin left
+  .u-#{$namespace}marginLeft-0 { margin-left: 0 !important; }
+  .u-#{$namespace}marginLeft-sm { margin-left: $m / 2 !important; }
+  .u-#{$namespace}marginLeft-md { margin-left: $m !important; }
+  .u-#{$namespace}marginLeft-lg { margin-left: $m * 2 !important; }
+  // Margin right
+  .u-#{$namespace}marginRight-0 { margin-right: 0 !important; }
+  .u-#{$namespace}marginRight-sm { margin-right: $m / 2 !important; }
+  .u-#{$namespace}marginRight-md { margin-right: $m !important; }
+  .u-#{$namespace}marginRight-lg { margin-right: $m * 2 !important; }
+}
+
+@include margin();
+@include media-query('tablet') { @include margin('md-'); }
+@include media-query('laptop') { @include margin('lg-'); }
+@include media-query('desktop') { @include margin('xl-'); }
+@include media-query('widescreen') { @include margin('xx-'); }
+
+
+@mixin padding($namespace: "") {
+  // Padding top ============
+  .u-#{$namespace}paddingTop-0 { padding-top: 0 !important; }
+  .u-#{$namespace}paddingTop-sm { padding-top: $m / 2 !important; }
+  .u-#{$namespace}paddingTop-md { padding-top: $m !important; }
+  .u-#{$namespace}paddingTop-lg { padding-top: $m * 2 !important; }
+  // Padding bottom ============
+  .u-#{$namespace}paddingBottom-0 { padding-bottom: 0 !important; }
+  .u-#{$namespace}paddingBottom-sm { padding-bottom: $m / 2 !important; }
+  .u-#{$namespace}paddingBottom-md { padding-bottom: $m !important; }
+  .u-#{$namespace}paddingBottom-lg { padding-bottom: $m * 2 !important; }
+  // Padding left ============
+  .u-#{$namespace}paddingLeft-0 { padding-left: 0 !important; }
+  .u-#{$namespace}paddingLeft-sm { padding-left: $m / 2 !important; }
+  .u-#{$namespace}paddingLeft-md { padding-left: $m !important; }
+  .u-#{$namespace}paddingLeft-lg { padding-left: $m * 2 !important; }
+  // Padding right ============
+  .u-#{$namespace}paddingRight-0 { padding-right: 0 !important; }
+  .u-#{$namespace}paddingRight-sm { padding-right: $m / 2 !important; }
+  .u-#{$namespace}paddingRight-md { padding-right: $m !important; }
+  .u-#{$namespace}paddingRight-lg { padding-right: $m * 2 !important; }
+}
+
+@include padding();
+@include media-query('tablet') { @include padding('md-'); }
+@include media-query('laptop') { @include padding('lg-'); }
+@include media-query('desktop') { @include padding('xl-'); }
+@include media-query('widescreen') { @include padding('xx-'); }
