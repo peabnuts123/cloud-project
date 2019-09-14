@@ -49,7 +49,7 @@
 
 .Header-brand {
   font-size: $font-size-h2;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
   margin: 0;
   margin-right: $m * 3;
 
@@ -68,7 +68,7 @@
 
 .Header-desktopLink {
   @extend %font-heading;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
   margin-right: $m * 2;
 
   &.is-active {
