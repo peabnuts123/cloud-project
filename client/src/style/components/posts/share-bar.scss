@@ -1,0 +1,26 @@
+.ShareBar {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: $font-size-h5;
+  font-weight: $font-weight-medium;
+  color: $grey-medium;
+}
+
+.ShareBar-left {
+  display: flex;
+  align-items: center;
+
+  > .Icon {
+    margin-right: $m;
+  }
+}
+
+.ShareBar-right {
+  display: flex;
+  align-items: center;
+
+  > .Icon {
+    margin-left: $m;
+  }
+}

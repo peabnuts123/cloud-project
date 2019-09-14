@@ -1,0 +1,52 @@
+.PostWithImage {
+  margin-bottom: $m;
+  box-shadow: 0 2px 8px rgba($black, 0.05);
+  border-radius: $m / 2;
+  background-color: $white;
+}
+
+.PostWithImage-image {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+.PostWithImage-titleBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.PostWithImage-contentContainer {
+  padding: $m;
+  display: flex;
+}
+
+.PostWithImage-avatarColumn {
+  box-sizing: content-box;
+  width: 50px;
+  padding-right: $m;
+}
+
+.PostWithImage-contentColumn {}
+
+.PostWithImage-timestamp {
+  color: $grey-medium;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-h5;
+  padding-left: $m;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.PostWithImage-handle {
+  @extend %font-heading;
+}
+
+.PostWithImage-message {
+  margin-top: $m;
+  margin-bottom: $m;
+}
+
+.Post-shareIcon {
+  font-size: $font-size-h3;
+  font-weight: $font-weight-regular;
+}

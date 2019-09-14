@@ -1,4 +1,5 @@
 import { Component, h } from "preact";
+import PostWithImage from "@app/components/posts/post-with-image";
 
 interface Props { }
 
@@ -6,6 +7,9 @@ export default class Home extends Component<Props> {
   public render() {
     return (
       <div class="HomeRoute">
+
+        <PostWithImage />
+        <PostWithImage />
 
         <h2>General</h2>
 

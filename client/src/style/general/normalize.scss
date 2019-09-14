@@ -5,3 +5,10 @@ html { box-sizing: border-box; }
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+img {
+  // Don't allow images to overflow their content
+  max-width: 100%;
+  // Make images render as blocks
+  display: block;
+}
