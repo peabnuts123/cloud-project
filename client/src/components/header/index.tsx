@@ -1,13 +1,15 @@
 import { Component, h } from "preact";
 import { Link } from "preact-router/match";
 
+import Icon, { IconType } from "@app/components/icon";
+
 export default class Header extends Component {
   public render() {
     return (
       <header class="Header">
         {/* Sandwich icon */}
         <div class="Header-menuIcon">
-          <span class="fas fa-bars" />
+          <Icon type={IconType.Menu} />
         </div>
 
         {/* Brand title */}

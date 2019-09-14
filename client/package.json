@@ -14,9 +14,9 @@
     "test": "jest ./tests"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.2",
     "@types/jest": "^24.0.18",
     "@types/webpack-env": "^1.14.0",
+    "feather-icons": "^4.24.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "normalize.css": "^8.0.1",

@@ -3,12 +3,6 @@
 // Normalize.css
 @import "~normalize.css";
 
-// Font Awesome (what a mission!)
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/regular";
-@import "~@fortawesome/fontawesome-free/scss/solid";
-
 // Google fonts
 // @TODO preload this better
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Raleway:400,400i,500,700,700i&display=swap');
