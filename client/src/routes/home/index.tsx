@@ -1,7 +1,7 @@
 import { Component, h } from "preact";
 
-import PostWithImage from "@app/components/posts/post-with-image";
-import Post from "@app/components/posts/post";
+import PostWithImage from "@app/components/post/with-image";
+import Post from "@app/components/post";
 
 interface Props { }
 

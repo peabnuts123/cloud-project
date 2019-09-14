@@ -4,28 +4,51 @@
   border-radius: $m / 2;
   background-color: $white;
 }
+.Post--fullWidth {
+  border-radius: 0;
+}
 
+// Body container
 .Post-bodyContainer {
   padding: $m;
   display: flex;
 }
+.Post--fullWidth-bodyContainer {
+  padding: $m;
+}
 
-
+// Title bar
 .Post-titleBar {
   display: flex;
   justify-content: space-between;
 }
+.Post--fullWidth-titleBar {
+  display: flex;
+}
 
+// Avatar column
 .Post-avatarColumn {
   box-sizing: content-box;
   flex: 0 0 50px;
   padding-right: $m;
 }
+.Post--fullWidth-avatarColumn {
+  box-sizing: content-box;
+  flex: 0 0 50px;
+  padding-right: $m;
+}
 
+// Content column
 .Post-contentColumn {
   // Flex oddities. See: https://weblog.west-wind.com/posts/2016/feb/15/flexbox-containers-pre-tags-and-managing-overflow
   min-width: 0;
   flex-grow: 1;
+}
+.Post--fullWidth-contentColumn {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Post-timestamp {

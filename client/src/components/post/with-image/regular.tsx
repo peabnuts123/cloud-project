@@ -1,27 +1,19 @@
 import { Component, h } from 'preact';
 
-import SocialBar from '@app/components/posts/social-bar';
-import Markdown from '@app/components/markdown';
+import SocialBar from '@app/components/post/social-bar';
+import { PostWithImageProps } from '@app/components/post/with-image';
 
-const markdownSource = `
-# Hello world!
-
-This is a sample post for the [Ego](https://github.com/peabnuts123/cloud-project) social network. In fact, this is the first post on the network!
-
-This is just a sample of what kind of content you might post here. Ego supports markdown formatting in posts, so you can _really_ **express** yourself.
-
-Enjoy your stay!
- – Jeff
-`;
-
-interface Props { }
 interface State { }
-export default class Post extends Component<Props, State> {
+
+export default class PostWithImage extends Component<PostWithImageProps, State> {
   public state = {};
 
   public render() {
     return (
-      <div class="Post">
+      <div class="Post PostWithImage">
+        {/* Post image */}
+        <img class="PostWithImage-image" src="https://images.unsplash.com/photo-1462993340984-49bd9e0f32dd" alt="Image attached to post" />
+
         {/* Post body */}
         <div class="Post-bodyContainer">
           {/* Avatar column */}
@@ -38,9 +30,7 @@ export default class Post extends Component<Props, State> {
             </div>
 
             {/* Message */}
-            <p class="Post-message">
-              <Markdown source={markdownSource} />
-            </p>
+            <p class="Post-message">Here is a nice photo I found of what outside looks like apparently. Maybe it is worth considering?</p>
 
             {/* Social bar */}
             <SocialBar numComments={1318} />
