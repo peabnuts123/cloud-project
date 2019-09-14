@@ -1,4 +1,4 @@
-.ShareBar {
+.SocialBar {
   display: flex;
   justify-content: space-between;
 
@@ -7,7 +7,7 @@
   color: $grey-medium;
 }
 
-.ShareBar-left {
+.SocialBar-left {
   display: flex;
   align-items: center;
 
@@ -16,7 +16,7 @@
   }
 }
 
-.ShareBar-right {
+.SocialBar-right {
   display: flex;
   align-items: center;
 

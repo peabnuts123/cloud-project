@@ -8,7 +8,7 @@ interface Props {
   numComments: number;
 }
 interface State { }
-export default class ShareBar extends Component<Props, State> {
+export default class SocialBar extends Component<Props, State> {
   public static defaultProps: Props = {
     onClickComments: () => { },
     onClickShare: () => { },
@@ -20,12 +20,12 @@ export default class ShareBar extends Component<Props, State> {
     const { numComments, onClickComments, onClickShare } = this.props;
 
     return (
-      <div class="ShareBar">
-        <div class="ShareBar-left">
+      <div class="SocialBar">
+        <div class="SocialBar-left">
           <Icon type={IconType.MessageCircle} />
           <span>{numComments} comments</span>
         </div>
-        <div class="ShareBar-right">
+        <div class="SocialBar-right">
           <span>Share</span>
           <Icon type={IconType.Share} />
         </div>
