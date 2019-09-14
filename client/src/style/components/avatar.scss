@@ -1,0 +1,10 @@
+.Avatar {
+  border-radius: $radius;
+  background-size: cover;
+  background-position: center;
+}
+
+.Avatar--large {
+  height: 50px;
+  width: 50px;
+}
