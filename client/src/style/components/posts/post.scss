@@ -18,11 +18,15 @@
 
 .Post-avatarColumn {
   box-sizing: content-box;
-  width: 50px;
+  flex: 0 0 50px;
   padding-right: $m;
 }
 
-// .Post-contentColumn {}
+.Post-contentColumn {
+  // Flex oddities. See: https://weblog.west-wind.com/posts/2016/feb/15/flexbox-containers-pre-tags-and-managing-overflow
+  min-width: 0;
+  flex-grow: 1;
+}
 
 .Post-timestamp {
   color: $grey-medium;

@@ -1,5 +1,7 @@
 import { Component, h } from "preact";
+
 import PostWithImage from "@app/components/posts/post-with-image";
+import Post from "@app/components/posts/post";
 
 interface Props { }
 
@@ -9,7 +11,7 @@ export default class Home extends Component<Props> {
       <div class="HomeRoute">
 
         <PostWithImage />
-        <PostWithImage />
+        <Post />
 
         <h2>General</h2>
 
