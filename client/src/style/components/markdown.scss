@@ -2,4 +2,9 @@
   :not(code) {
     @extend %font-body;
   }
+
+  strong, strong * {
+    // Re-affirm strong font weight
+    font-weight: $font-weight-bold !important;
+  }
 }

@@ -4,39 +4,14 @@ import SocialBar from '@app/components/posts/social-bar';
 import Markdown from '@app/components/markdown';
 
 const markdownSource = `
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+# Hello world!
 
-This is a paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia impedit dolorum aliquid, iure ab vel laborum libero architecto sequi?
+This is a sample post for the [Ego](https://github.com/peabnuts123/cloud-project) social network. In fact, this is the first post on the network!
 
-You can also use _italics_ and **bold**.
+This is just a sample of what kind of content you might post here. Ego supports markdown formatting in posts, so you can _really_ **express** yourself.
 
-<img src="http://google.com" />
-
-<script>alert("Hello")</script>
-
-\`\`\`
-import { Component, h } from 'preact';
-
-interface Props { }
-interface State { }
-export default class Untitled-1 extends Component<Props, State> {
-  public state = {};
-
-  public render() {
-    return (
-      <div>
-        <h1>Untitled-1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim pariatur adipisci possimus esse minus totam consequatur iure eaque quia inventore!</p>
-      </div>
-    );
-  }
-}
-\`\`\`
+Enjoy your stay!
+ – Jeff
 `;
 
 interface Props { }

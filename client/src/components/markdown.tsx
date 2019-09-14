@@ -10,8 +10,11 @@ const MARKED_OPTIONS: MarkedOptions = {
 const SANITIZE_OPTIONS = {
   ALLOWED_TAGS: [
     'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
-    'em', 'strong', 'pre', 'code', 'br',
-    'p',
+    'em', 'strong',
+    'pre', 'code', 'blockquote', 'del',
+    'p', 'a', 'br', 'hr',
+    'ol', 'ul', 'li',
+    'table', 'thead', 'tr', 'th', 'tbody', 'td',
   ],
 };
 

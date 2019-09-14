@@ -8,15 +8,18 @@ $font-weight-regular: normal;
 $font-weight-medium: 500;
 $font-weight-bold: bold;
 
+// Font names
+$font-style-heading: 'Lato', sans-serif;
+$font-style-body: 'Raleway', sans-serif;
 
-// Fonts
+// Font style placeholders
 %font-heading {
-  font-family: 'Lato', sans-serif;
+  font-family: $font-style-heading;
   font-weight: $font-weight-bold;
 }
 
 %font-body {
-  font-family: 'Raleway', sans-serif;
+  font-family: $font-style-body;
   font-weight: $font-weight-regular;
 }
 
@@ -81,16 +84,26 @@ a, .link {
 
 // Code
 code {
-  display: block;
   background-color: $grey-light;
   color: $text;
   font-family: 'Courier New', Courier, monospace;
   white-space: pre;
+  border-radius: $radius;
+  padding: $m / 2;
+}
+pre > code {
+  display: block;
   overflow-x: scroll;
   padding: $m;
-  border-radius: $radius;
 }
 
+// Blockquote
+blockquote {
+  margin-left: 0;
+  padding-left: $m * 2;
+  border-left: 4px solid $grey-light;
+  color: rgba($text, 0.6);
+}
 
 // General / default
 html {
