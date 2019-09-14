@@ -1,3 +1,7 @@
 .SiteWrapper {
-  background-color: $grey-light;
+  padding-top: $header-height--small + $m;
+
+  @include media-query('tablet') {
+    padding-top: $header-height--large + $m;
+  }
 }
