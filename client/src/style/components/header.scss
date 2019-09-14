@@ -5,6 +5,7 @@ $header-height--large: 80px;
   height: $header-height--small;
   width: 100%;
   position: fixed;
+  z-index: 10;
   background-color: $primary;
   color: $secondary;
   display: flex;
