@@ -14,11 +14,15 @@
     "test": "jest ./tests"
   },
   "devDependencies": {
+    "@types/dompurify": "0.0.33",
     "@types/jest": "^24.0.18",
+    "@types/marked": "^0.6.5",
     "@types/webpack-env": "^1.14.0",
+    "dompurify": "^2.0.0",
     "feather-icons": "^4.24.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
+    "marked": "^0.7.0",
     "normalize.css": "^8.0.1",
     "per-env": "^1.0.2",
     "preact": "^8.5.2",

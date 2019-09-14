@@ -61,7 +61,7 @@ p, .p {
 }
 
 strong, .strong {
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-bold !important;
 }
 
 label, .label {
@@ -77,6 +77,18 @@ a, .link {
   &:focus, &:hover, &:active {
     color: darken($link, 15%);
   }
+}
+
+// Code
+code {
+  display: block;
+  background-color: $grey-light;
+  color: $text;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre;
+  overflow-x: scroll;
+  padding: $m;
+  border-radius: $radius;
 }
 
 

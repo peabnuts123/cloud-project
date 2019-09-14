@@ -1,0 +1,5 @@
+.Markdown {
+  :not(code) {
+    @extend %font-body;
+  }
+}
