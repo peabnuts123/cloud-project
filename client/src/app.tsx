@@ -1,9 +1,11 @@
 import { Component, h } from "preact";
 import { Route, Router, RouterOnChangeArgs } from "preact-router";
 
+import Header from "@app/components/header";
+
 import Home from "@app/routes/home";
 import Profile from "@app/routes/profile";
-import Header from "@app/components/header";
+import Post from "@app/routes/post";
 
 if ((module as any).hot) {
   // tslint:disable-next-line:no-var-requires
@@ -21,15 +23,14 @@ export default class App extends Component {
       <div id="app">
         <Header />
         <div className="SiteWrapper">
-          <div class="Container">
 
-            <Router onChange={this.handleRoute}>
-              <Route path="/" component={Home} />
-              <Route path="/profile/" component={Profile} user="me" />
-              <Route path="/profile/:user" component={Profile} />
-            </Router>
+          <Router onChange={this.handleRoute}>
+            <Route path="/" component={Home} />
+            <Route path="/post/:post_id" component={Post} />
+            <Route path="/profile/" component={Profile} user="me" />
+            <Route path="/profile/:user" component={Profile} />
+          </Router>
 
-          </div>
         </div>
       </div>
     );

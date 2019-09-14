@@ -1,7 +1,7 @@
 .SiteWrapper {
-  padding-top: $header-height--small + $m;
+  padding-top: $header-height--small;
 
   @include media-query('tablet') {
-    padding-top: $header-height--large + $m;
+    padding-top: $header-height--large;
   }
 }

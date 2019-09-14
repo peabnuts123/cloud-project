@@ -19,3 +19,8 @@ $container-padding--large: 2 * $m;
   @include media-query('desktop') { width: $breakpoint-laptop; }
   @include media-query('widescreen') { width: $breakpoint-desktop; }
 }
+
+.Container--noPadding {
+  padding-left: 0;
+  padding-right: 0;
+}
