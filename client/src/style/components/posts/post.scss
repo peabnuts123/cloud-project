@@ -1,0 +1,43 @@
+.Post {
+  margin-bottom: $m;
+  box-shadow: 0 2px 8px rgba($black, 0.05);
+  border-radius: $m / 2;
+  background-color: $white;
+}
+
+.Post-bodyContainer {
+  padding: $m;
+  display: flex;
+}
+
+
+.Post-titleBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Post-avatarColumn {
+  box-sizing: content-box;
+  width: 50px;
+  padding-right: $m;
+}
+
+// .Post-contentColumn {}
+
+.Post-timestamp {
+  color: $grey-medium;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-h5;
+  padding-left: $m;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.Post-handle {
+  @extend %font-heading;
+}
+
+.Post-message {
+  margin-top: $m;
+  margin-bottom: $m;
+}
