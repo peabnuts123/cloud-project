@@ -8,9 +8,7 @@ interface Props { }
 export default class Home extends Component<Props> {
   public render() {
     return (
-      <div class="HomeRoute">
-        <div class="Container">
-
+      <div class="HomeRoute Container">
           <PostWithImage/>
           <Post />
 
@@ -33,8 +31,6 @@ export default class Home extends Component<Props> {
           <h4>Home</h4>
           <h4>About</h4>
           <h4>Search</h4>
-
-        </div>
       </div>
     );
   }
