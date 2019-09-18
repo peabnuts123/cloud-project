@@ -1,0 +1,24 @@
+.CreateComment {
+  margin-bottom: $m;
+  box-shadow: 0 2px 8px rgba($black, 0.05);
+  border-radius: $m / 2;
+  background-color: $white;
+  padding: $m;
+}
+
+.CreateComment-headerBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CreateComment-headerBarAvatar {
+  @include media-query('tablet') {
+    .Avatar {
+      display: none;
+    }
+  }
+}
+
+.CreateComment-input {
+  margin-top: $m;
+}
