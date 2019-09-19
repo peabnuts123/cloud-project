@@ -3,10 +3,18 @@ import { Component, h } from 'preact';
 import SocialBar from '@app/components/post/social-bar';
 import { PostWithImageProps } from '@app/components/post/with-image';
 
+import { route } from 'preact-router';
+import { bind } from 'decko';
+
 interface State { }
 
 export default class PostWithImage extends Component<PostWithImageProps, State> {
   public state = {};
+
+  @bind
+  public visitFullPost() {
+    route('/post/1');
+  }
 
   public render() {
     return (
@@ -15,7 +23,7 @@ export default class PostWithImage extends Component<PostWithImageProps, State> 
         <img class="PostWithImage-image" src="https://images.unsplash.com/photo-1462993340984-49bd9e0f32dd" alt="Image attached to post" />
 
         {/* Post body */}
-        <div class="Post-bodyContainer">
+        <div class="Post-bodyContainer" onClick={this.visitFullPost}>
           {/* Avatar column */}
           <div class="Post-avatarColumn">
             <div class="Avatar Avatar--large" style="background-image: url(https://images.unsplash.com/photo-1515921273796-42aa45543058)" />
