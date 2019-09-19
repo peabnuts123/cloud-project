@@ -6,6 +6,7 @@ import Header from "@app/components/header";
 import Home from "@app/routes/home";
 import Profile from "@app/routes/profile";
 import Post from "@app/routes/post";
+import Settings from '@app/routes/settings';
 
 if ((module as any).hot) {
   // tslint:disable-next-line:no-var-requires
@@ -28,7 +29,7 @@ export default class App extends Component {
             <Route path="/" component={Home} />
             <Route path="/post/:post_id" component={Post} />
             <Route path="/profile/" component={Profile} />
-            <Route path="/profile/:user" component={Profile} />
+            <Route path="/settings/" component={Settings} />
           </Router>
 
         </div>

@@ -30,6 +30,7 @@ module.exports = {
     "selector-list-comma-newline-after": "always-multi-line",
     "selector-pseudo-element-colon-notation": "double",
     "value-list-max-empty-lines": 1,
+    "no-descending-specificity": null,
 
 
     /* SCSS rules */

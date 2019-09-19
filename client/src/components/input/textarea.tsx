@@ -1,7 +1,9 @@
 import { Component, h } from 'preact';
 import { bind } from 'decko';
 
-interface Props { }
+interface Props {
+  id?: string;
+}
 interface State {
   value: string;
 }
@@ -26,7 +28,11 @@ export default class Textarea extends Component<Props, State> {
 
   public render() {
     return (
-      <textarea class="Textarea" value={this.state.value} onInput={this.onInputChanged} />
+      <textarea id={this.props.id}
+        class="Textarea"
+        value={this.state.value}
+        onInput={this.onInputChanged}
+      />
     );
   }
 }

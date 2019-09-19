@@ -47,9 +47,11 @@ $header-height--large: 80px;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-right: $font-size-h1;
 
   @include media-query('tablet') {
     width: auto;
+    margin-right: 0;
   }
 }
 
@@ -57,10 +59,10 @@ $header-height--large: 80px;
   font-size: $font-size-h2;
   font-weight: $font-weight-medium;
   margin: 0;
-  margin-right: $m * 3;
 
   @include media-query('tablet') {
     font-size: $font-size-h1;
+    margin-right: $m * 3;
   }
 }
 

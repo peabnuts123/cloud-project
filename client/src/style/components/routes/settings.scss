@@ -1,0 +1,27 @@
+$settings-overlap-amount: 35px;
+
+.SettingsRoute {
+  padding-top: 60px;
+}
+
+.SettingsRoute-container {
+  background-color: $white;
+  padding-left: $m;
+  padding-right: $m;
+  padding-bottom: $m;
+
+  margin-bottom: $m;
+  box-shadow: 0 2px 8px rgba($black, 0.05);
+  border-radius: $m / 2;
+}
+
+.SettingsRoute-avatarContainer {
+  position: relative;
+  padding-top: $profile-overlap-amount;
+
+  .Avatar {
+    position: absolute;
+    top: -$profile-overlap-amount;
+    left: calc(50% - #{$profile-overlap-amount});
+  }
+}

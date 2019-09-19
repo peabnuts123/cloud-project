@@ -1,0 +1,11 @@
+.Input {
+  width: 100%;
+}
+
+.Input--text {
+  display: block;
+  background-color: $white;
+  border: 1px solid $grey-medium;
+  border-radius: $radius;
+  padding: $m;
+}
