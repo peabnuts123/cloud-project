@@ -1,0 +1,50 @@
+.Comment {
+  margin-bottom: $m;
+  box-shadow: 0 2px 8px rgba($black, 0.05);
+  border-radius: $m / 2;
+  background-color: $white;
+}
+
+// Body container
+.Comment-bodyContainer {
+  padding: $m;
+  display: flex;
+}
+
+// Title bar
+.Comment-titleBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Avatar column
+.Comment-avatarColumn {
+  box-sizing: content-box;
+  flex: 0 0 50px;
+  padding-right: $m;
+}
+
+// Content column
+.Comment-contentColumn {
+  // Flex oddities. See: https://weblog.west-wind.com/posts/2016/feb/15/flexbox-containers-pre-tags-and-managing-overflow
+  min-width: 0;
+  flex-grow: 1;
+}
+
+.Comment-timestamp {
+  color: $grey-medium;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-h5;
+  padding-left: $m;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.Comment-handle {
+  @extend %font-heading;
+}
+
+.Comment-message {
+  margin-top: $m;
+  margin-bottom: $m;
+}
