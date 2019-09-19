@@ -27,7 +27,7 @@ export default class App extends Component {
           <Router onChange={this.handleRoute}>
             <Route path="/" component={Home} />
             <Route path="/post/:post_id" component={Post} />
-            <Route path="/profile/" component={Profile} user="me" />
+            <Route path="/profile/" component={Profile} />
             <Route path="/profile/:user" component={Profile} />
           </Router>
 

@@ -1,0 +1,43 @@
+.ProfileRoute {
+  padding-top: 60px;
+}
+
+.ProfileRoute-profile {
+  background-color: $white;
+  text-align: center;
+  padding-left: $m;
+  padding-right: $m;
+  padding-bottom: $m;
+
+  margin-bottom: $m;
+  box-shadow: 0 2px 8px rgba($black, 0.05);
+  border-radius: $m / 2;
+}
+
+$profile-overlap-amount: 35px;
+
+.ProfileRoute-avatarContainer {
+  position: relative;
+  padding-top: $profile-overlap-amount;
+
+  .Avatar {
+    position: absolute;
+    top: -$profile-overlap-amount;
+    left: calc(50% - #{$profile-overlap-amount});
+  }
+}
+
+.ProfileRoute-handle {
+  @extend %font-heading;
+  margin-top: $m;
+  margin-bottom: $m;
+}
+
+.ProfileRoute-bio {
+  margin-top: $m;
+  margin-bottom: $m;
+}
+
+.ProfileRoute-url {
+  margin-top: $m;
+}
