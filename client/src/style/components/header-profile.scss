@@ -1,0 +1,12 @@
+.HeaderProfile {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderProfile-handle {
+  margin-right: $m;
+}
+
+.HeaderProfile-avatar {
+  cursor: pointer;
+}
