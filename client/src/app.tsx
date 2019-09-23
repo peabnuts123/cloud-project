@@ -7,6 +7,7 @@ import Home from "@app/routes/home";
 import Profile from "@app/routes/profile";
 import Post from "@app/routes/post";
 import Settings from '@app/routes/settings';
+import NotFound from '@app/routes/not-found';
 
 if ((module as any).hot) {
   // tslint:disable-next-line:no-var-requires
@@ -30,6 +31,10 @@ export default class App extends Component {
             <Route path="/post/:post_id" component={Post} />
             <Route path="/profile/" component={Profile} />
             <Route path="/settings/" component={Settings} />
+
+            <Route path="/about" component={NotFound} />
+            <Route path="/search" component={NotFound} />
+            <Route path="/logout" component={NotFound} />
           </Router>
 
         </div>
