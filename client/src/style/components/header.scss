@@ -152,6 +152,11 @@ body.no-scroll {
   padding-right: $m * 2;
 }
 
+.Header-mobileNav-scrollable {
+  overflow-y: scroll;
+  max-height: calc(100vh - #{$header-height--small});
+}
+
 .Header-mobileNav-closeIcon {
   cursor: pointer;
 }
@@ -177,13 +182,15 @@ body.no-scroll {
 }
 
 .Header-mobileNavProfile {
-  display: flex;
-  align-items: center;
+  a {
+    display: inline-flex;
+    align-items: center;
 
-  // I only want to click the anchor tag.
-  // Could maybe do this in general TBH #yolo
-  a > * {
-    pointer-events: none;
+    // I only want to click the anchor tag.
+    // Could maybe do this in general TBH #yolo
+    > * {
+      pointer-events: none;
+    }
   }
 }
 
@@ -191,4 +198,12 @@ body.no-scroll {
   @extend %font-body;
   font-size: 16px;
   margin-left: $m;
+}
+
+.Header-mobileNav-invisibilityCloak {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }

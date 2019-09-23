@@ -4,24 +4,29 @@
   background-position: center;
 }
 
+@mixin avatar-size($size) {
+  width: $size;
+  height: $size;
+  min-width: $size;
+  min-height: $size;
+  max-width: $size;
+  max-height: $size;
+}
+
 .Avatar--xLarge {
-  height: 70px;
-  width: 70px;
+  @include avatar-size(70px);
 }
 
 .Avatar--large {
-  height: 50px;
-  width: 50px;
+  @include avatar-size(50px);
 }
 
 .Avatar--medium {
-  height: 40px;
-  width: 40px;
+  @include avatar-size(40px);
 }
 
 .Avatar--small {
-  height: 30px;
-  width: 30px;
+  @include avatar-size(30px);
 }
 
 .AvatarChange {

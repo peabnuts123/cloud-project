@@ -112,25 +112,27 @@ export default class Header extends Component<Props, State> {
                   <Icon type={IconType.X} />
                 </div>
               </div>
-              <ul class="Header-mobileNav-list">
-                <li class="Header-mobileNav-listItem"><Link onClick={this.handleNavClick} href="/" activeClassName="is-active">Home</Link></li>
-                <li class="Header-mobileNav-listItem"><Link onClick={this.handleNavClick} href="/about" activeClassName="is-active">About</Link></li>
-                <li class="Header-mobileNav-listItem"><Link onClick={this.handleNavClick} href="/search" activeClassName="is-active">Search</Link></li>
-              </ul>
+              <div className="Header-mobileNav-scrollable">
+                <ul class="Header-mobileNav-list">
+                  <li class="Header-mobileNav-listItem"><Link onClick={this.handleNavClick} href="/" activeClassName="is-active">Home</Link></li>
+                  <li class="Header-mobileNav-listItem"><Link onClick={this.handleNavClick} href="/about" activeClassName="is-active">About</Link></li>
+                  <li class="Header-mobileNav-listItem"><Link onClick={this.handleNavClick} href="/search" activeClassName="is-active">Search</Link></li>
+                </ul>
 
-              <ul class="Header-mobileNav-list">
-                <li class="Header-mobileNav-listItem Header-mobileNavProfile">
-                  <Link onClick={this.handleNavClick} href="/profile" activeClassName="is-active" class="asdas">
-                    <div class="Avatar Avatar--small" style="background-image: url(https://images.unsplash.com/photo-1515921273796-42aa45543058)" />
-                    <span class="Header-mobileNavProfile-handle">i-need-to-go-outside-more</span>
-                  </Link>
-                </li>
-                <li class="Header-mobileNav-listItem"><Link onClick={this.handleNavClick} href="/settings" activeClassName="is-active">Settings</Link></li>
-                <li class="Header-mobileNav-listItem"><Link onClick={this.handleNavClick} href="/logout" activeClassName="is-active">Logout</Link></li>
-              </ul>
+                <ul class="Header-mobileNav-list">
+                  <li class="Header-mobileNav-listItem Header-mobileNavProfile">
+                    <Link onClick={this.handleNavClick} href="/profile" activeClassName="is-active">
+                      <div class="Avatar Avatar--small" style="background-image: url(https://images.unsplash.com/photo-1515921273796-42aa45543058)" />
+                      <span class="Header-mobileNavProfile-handle">i-need-to-go-outside-more</span>
+                    </Link>
+                  </li>
+                  <li class="Header-mobileNav-listItem"><Link onClick={this.handleNavClick} href="/settings" activeClassName="is-active">Settings</Link></li>
+                  <li class="Header-mobileNav-listItem"><Link onClick={this.handleNavClick} href="/logout" activeClassName="is-active">Logout</Link></li>
+                </ul>
+              </div>
             </nav>
 
-            <div className="Header-mobileNav-SOMETHING" />
+            <div className="Header-mobileNav-invisibilityCloak" onClick={this.closeMobileNav} />
           </div>
         ))}
 
