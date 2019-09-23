@@ -4,12 +4,14 @@ import ChevronLeftSVG from '!!raw-loader!feather-icons/dist/icons/chevron-left.s
 import MenuSVG from '!!raw-loader!feather-icons/dist/icons/menu.svg';
 import MessageCircleSVG from '!!raw-loader!feather-icons/dist/icons/message-circle.svg';
 import ShareSVG from '!!raw-loader!feather-icons/dist/icons/share.svg';
+import XSVG from '!!raw-loader!feather-icons/dist/icons/x.svg';
 
 export enum IconType {
   ChevronLeft = "Chevron Left",
   Menu = "Menu",
   MessageCircle = "Message Circle",
   Share = "Share",
+  X = "Close",
 }
 
 interface Props {
@@ -25,6 +27,8 @@ export default class Icon extends Component<Props> {
         return MenuSVG;
       case IconType.MessageCircle:
         return MessageCircleSVG;
+      case IconType.X:
+        return XSVG;
       case IconType.Share:
         return ShareSVG;
     }

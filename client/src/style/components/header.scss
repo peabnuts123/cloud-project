@@ -1,11 +1,13 @@
 $header-height--small: 50px;
 $header-height--large: 80px;
 
+$header-z-index: 10;
+
 .Header {
   height: $header-height--small;
   width: 100%;
   position: fixed;
-  z-index: 10;
+  z-index: $header-z-index;
   background-color: $primary;
   color: $secondary;
 
@@ -63,6 +65,7 @@ $header-height--large: 80px;
 .Header-menuIcon {
   width: $font-size-h1;
   height: $font-size-h1;
+  cursor: pointer;
 
   > .Icon, svg {
     width: 100%;
@@ -115,4 +118,77 @@ $header-height--large: 80px;
   &.is-active {
     border-bottom: 2px solid $secondary;
   }
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100%;
+
+  @include media-query('tablet') {
+    overflow: scroll;
+  }
+}
+
+.Header-mobileNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $primary;
+  width: 75vw;
+  height: 100vh;
+  z-index: $header-z-index - 1;
+
+  @include media-query('tablet') {
+    display: none;
+  }
+}
+
+.Header-mobileNav-topGutter {
+  height: $header-height--small;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: $m * 2;
+}
+
+.Header-mobileNav-closeIcon {
+  cursor: pointer;
+}
+
+.Header-mobileNav-list {
+  padding-left: $m * 2;
+  padding-right: $m * 2;
+  margin-top: 0;
+  margin-bottom: $m * 4;
+}
+
+.Header-mobileNav-listItem {
+  font-family: $font-style-heading;
+  font-size: $font-size-h2;
+  font-weight: $font-weight-medium;
+  list-style: none;
+  padding-top: $m;
+  padding-bottom: $m;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba($secondary, 0.2);
+  }
+}
+
+.Header-mobileNavProfile {
+  display: flex;
+  align-items: center;
+
+  // I only want to click the anchor tag.
+  // Could maybe do this in general TBH #yolo
+  a > * {
+    pointer-events: none;
+  }
+}
+
+.Header-mobileNavProfile-handle {
+  @extend %font-body;
+  font-size: 16px;
+  margin-left: $m;
 }
