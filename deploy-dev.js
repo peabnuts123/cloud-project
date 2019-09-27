@@ -1,7 +1,7 @@
 const cp = require('child_process');
 const spawnProcess = cp.spawn;
 const execSync = cp.execSync;
-const ENV = require('./.env.json');
+const ENV = require('./.env');
 
 /**
  * PREREQUISITES
